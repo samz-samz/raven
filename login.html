@@ -9,15 +9,43 @@
             display: flex;
             justify-content: center;
         }
-        
+        form{
+            width: 350px;
+            background-color: blue;
+            padding: 20px 30px;
+            
         }
+        form h2{
+            text-align:center;
+            color:orange;
+        }
+        form input{
+            padding: 10px 5px;
+            border-radius: 8px;
+            border: none;
+        }
+        .sumbmit-button{
+            background-color: aqua;
+            color: black;
+            padding: 20px 30px;
+            display: flex;
+            flex-direction: column;
+        } 
     </style>
 </head>
 <body>
-    <h1>me</h1>
-    <h1>you</h1>
-
-    
-    
+  <div class="login-form">
+   <form>
+    <h2>EMAIL ADDRESS</h2>
+    <label for="email">Email: </label>
+    <input type="email" name="email" required placeholder="Enter a valid email">
+    <br>
+    <label for="password">password</label>
+    <input type="password" name="password" placeholder="***************"required>
+    <br>
+    <input type="submit" value="login" class="sumbmit-button">
+   </form>
+   
+  </div>  
 </body>
 </html>
