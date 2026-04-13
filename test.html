@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <h2>Personal Information Form</h2>
+
+    <!-- Form starts here -->
+    <form action="#" method="post">
+        
+        <!-- Name input -->
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br><br>
+
+        <!-- Age range dropdown -->
+        <label for="age">Select Age Range:</label><br>
+        <select id="age" name="age" required>
+            <option value="">-- Select Age Range --</option>
+            <option value="12-18">12 - 18</option>
+            <option value="18-25">18 - 25</option>
+            <option value="26-35">26 - 35</option>
+            <option value="36-50">36 - 50</option>
+            <option value="old people">51+</option>
+        </select>
+        <br><br>
+
+        <!-- Country dropdown -->
+        <label for="country">Select Country:</label><br>
+        <select id="country" name="country" required>
+            <option value="">-- Select Country --</option>
+            <option value="us">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="ca">Canada</option>
+            <option value="au">Australia</option>
+            <option value="in">India</option>
+            <option value="nig">Nigeria</option>
+            <option value="other">Other</option>
+        </select>
+        <br><br>
+
+        <!-- Submit button -->
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
